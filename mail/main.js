@@ -26,6 +26,8 @@ btnVerify.addEventListener('click', function() {
                 document.querySelector('#output').style.color = "red"
                 document.querySelector('#output').style.fontSize = "2rem"
                 outputEmail.innerHTML = `Non esiste "${inputEmail.value}", Registrati`;
+
+                verify = false;
             }
         }
     }
