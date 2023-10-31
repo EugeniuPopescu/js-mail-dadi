@@ -22,10 +22,12 @@ btnVerify.addEventListener('click', function() {
                 console.log(email);
                 
                 verify = true;
+
+                break;
             } else {
                 document.querySelector('#output').style.color = "red"
                 document.querySelector('#output').style.fontSize = "2rem"
-                outputEmail.innerHTML = `Non esiste "${inputEmail.value}", Registrati`;
+                outputEmail.innerHTML = `Non esiste, Registrati`;
 
                 verify = false;
             }
